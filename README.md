@@ -27,6 +27,19 @@ In the project root directory, run the following commands
 git submodule init
 git submodule update
 mkdir build
+
+# install gcc
+sudo apt update
+sudo apt install build-essential
+sudo apt-get install manpages-dev
+sudo apt-get install libssl-dev
+gcc --version
+
+# install cmake
+./bootstrap
+make
+make install
+
 cmake .. -DEIGEN3_INCLUDE_DIR=/path/to/your/eigen3/
 ```
 
